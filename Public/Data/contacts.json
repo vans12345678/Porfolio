@@ -1,0 +1,30 @@
+{
+    "contacts":
+    [
+        {
+            "FullName":"Tony Stark",
+            "ContactNumber":"4165555556",
+            "EmailAddress":"ironman@example.com"
+        },
+        {
+            "FullName":"Bruce Banner",
+            "ContactNumber":"4165555557",
+            "EmailAddress":"thehulk@example.com"
+        },
+        {
+            "FullName":"Peter Parker",
+            "ContactNumber":"4165555558",
+            "EmailAddress":"spiderman@example.com"
+        },
+        {
+            "FullName":"Stephen Strange",
+            "ContactNumber":"4165555559",
+            "EmailAddress":"doctorstrange@example.com"
+        },
+        {
+            "FullName":"Reed Richards",
+            "ContactNumber":"4165555550",
+            "EmailAddress":"mrfantastic@example.com"
+        }
+    ]
+}

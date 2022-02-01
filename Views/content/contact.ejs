@@ -1,0 +1,45 @@
+<!--
+  Name: Andre Agrippa
+  Date: 04/14/2021
+  Purpose: Page for contact.
+-->
+  <h1 class = "display-1 text-center">Contact Me</h1>
+  <div class="row justify-content-lg-center g-3">
+  <div id="messageArea"></div>
+  <form class="col-lg-6 col-md-10 col-sm-10">
+
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="inputGroup-sizing-default">Full Name </span>
+      <input id="fullName" type="text" class="form-control" aria-label="Full Name" aria-describedby="Full Name Input"
+      name="fullName" required>
+    </div>
+
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="inputGroup-sizing-default">Contact Number</span>
+      <input id="contactNumber" type="tel" class="form-control" aria-label="Contact Number" aria-describedby="Contact Number Input"
+      name="contactNumber" required>
+    </div>
+
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="inputGroup-sizing-default">Email</span>
+      <input id="emailAddress" type="email" class="form-control" aria-label="Email Address" aria-describedby="Email Address Input"
+      name="emailAddress" required>
+    </div>
+
+    <div class="input-group mb-3">
+      <span class="input-group-text">Your Message</span>
+      <textarea id="message" class="form-control" aria-label="With textarea" required></textarea>
+    </div>
+
+    <div class="form-check mb-3">
+      <input id="subscribeCheckbox" class="form-check-input" type="checkbox" value="" name="subscribeCheckbox">
+      <label class="form-check-label beigeText" for="subscribeCheckbox"> Subscribe to our Contact List</label>
+    </div>
+
+    <div class="text-end mt-2">
+      <button id="sendButton" type="button" class="btn btn-primary"> Send</button>
+      <button id="cancelButton" type="reset" class="btn btn-warning">Cancel</button>
+    </div>
+    
+  </form>
+</div>

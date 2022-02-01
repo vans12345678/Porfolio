@@ -1,0 +1,36 @@
+<!--
+  Name: Andre Agrippa
+  Date: 04/14/2021
+  Purpose: To connect all site dependencies and display error page.
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERROR <%= error.status %> - <%= message %></title>
+    <!-- CSS Section -->
+    <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="/Content/app.css">
+</head>
+<body>
+    <!-- Main Header -->
+    <header>  
+        <%- include('./components/header'); -%>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <h1>ERROR <%= error.status %> - <%= message %> </h1>
+    </main>
+
+    <!-- Main Footer -->
+    <footer>
+        <%- include('./components/footer'); -%>
+    </footer>
+
+    <!-- Script Section-->
+    <script src="/jquery/dist/jquery.min.js"></script>
+    <script src="/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

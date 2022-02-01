@@ -1,0 +1,41 @@
+<!--
+  Name: Andre Agrippa
+  Date: 04/14/2021
+  Purpose: Page for contact-list.
+-->
+<h1 class = "display-1 text-center">Contact List</h1>
+  <div class="row">
+    <div class="col">
+
+      <a href="/contact-list/add" id="addButton" class="btn btn-success mb-1">Add Contact</a>
+
+      <table class="table table-striped table-bordered table-hover">
+        <thead class="table-dark">
+          <tr>
+            <th scope="col" class="text-center">#</th>
+            <th scope="col">Full Name</th>
+            <th scope="col">Contact Number</th>
+            <th scope="col">Email Address</th>
+            <th></th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="contactList">
+
+        <% for(let count = 0; count < contacts.length; count++) { %>
+
+        <tr>
+          <th scope="row" class="text-center"><%= count + 1 %></th>
+          <td><%= contacts[count].FullName %></td>
+          <td><%= contacts[count].ContactNumber %></td>
+          <td><%= contacts[count].EmailAddress %></td>
+          <td class="text-center"><a href="/contact-list/edit/<%= contacts[count]._id %>" class="btn btn-success btn-sm edit"> Edit</a></td>
+          <td class="text-center"><a href="/contact-list/delete/<%= contacts[count]._id %>" class="btn btn-danger btn-sm delete"> Delete</a></td>
+        </tr>
+
+        <% } %>
+
+        </tbody>
+      </table>
+    </div>
+  </div>

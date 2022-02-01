@@ -1,0 +1,37 @@
+<!--
+  Name: Andre Agrippa
+  Date: 04/14/2021
+  Purpose: Page for edit contact.
+-->
+<div class="row justify-content-lg-center g-3">
+  <h1><%= title %> Contact</h1>
+  <div id="messageArea"></div>
+  <form method="POST" class="col-lg-6 col-md-10 col-sm-10">
+
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="inputGroup-sizing-default">Full Name </span>
+      <input id="fullName" type="text" class="form-control" aria-label="Full Name" aria-describedby="Full Name Input"
+      name="FullName" value="<%= contact.FullName %>" required>
+    </div>
+
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="inputGroup-sizing-default">Contact Number</span>
+      <input id="contactNumber" type="tel" class="form-control" aria-label="Contact Number" aria-describedby="Contact Number Input"
+      name="ContactNumber" value="<%= contact.ContactNumber %>" required>
+    </div>
+
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="inputGroup-sizing-default">Email</span>
+      <input id="emailAddress" type="email" class="form-control" aria-label="Email Address" aria-describedby="Email Address Input"
+      name="EmailAddress" value="<%= contact.EmailAddress %>" required>
+    </div>
+
+    <% if(title == "Edit") { %>
+    <button id="editButton" type="submit" class="btn btn-success"> Edit</button>
+    <% } else { %>
+    <button id="addButton" type="submit" class="btn btn-success"> Add</button>
+    <% } %>
+
+    <a href="/contact-list" id="cancelButton" type="button" class="btn btn-warning"> Cancel</a>
+  </form>
+</div>
